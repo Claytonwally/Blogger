@@ -15,4 +15,15 @@
  @import "bootstrap";
 
  .container
- {padding-top:15px}
+ {padding-top:15px;}
+
+ th
+ {
+   background-color: #dddddd;
+ }
+
+ .form-control
+ {
+   background-color: #efeeef;
+   border: 2px solid #eeccdd;
+ }

@@ -1,4 +1,7 @@
-<p><strong>Title:</strong>
+<div class="row">
+	<div class="col"></div>
+	<div class="col-md-7">
+	<p><strong>Title:</strong>
 	<%= @article.title %>
 </p>
 <p>
@@ -17,6 +20,9 @@
 
 
 <p>
-	<%= link_to 'Back', articles_path %>
-  | <%= link_to 'Home', welcome_index_path %>	
+	<%= link_to 'Back', articles_path, class: 'btn btn-sm btn-info' %>
+   <%= link_to 'Home', welcome_index_path , class:'btn btn-sm btn-success'%>
 </p>
+</div><!-- closing col-md-7 div -->
+<div class="col"></div>
+</div><!-- closing  row div -->
