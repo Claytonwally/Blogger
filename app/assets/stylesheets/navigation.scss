@@ -8,16 +8,30 @@
 
 }
 
+#active_nav-link
+{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #078CE7 !important;
+}
+
+.active_nav-link
+{
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff !important;
+}
+
 .nav-item a
 {
   font-weight: bold;
-  color: #lightblue;
+  color: #078CE7;
 }
 
 .nav-item a:hover
 {
   font-weight: bold;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .navbar-toggler
