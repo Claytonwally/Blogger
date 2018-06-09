@@ -5,7 +5,7 @@
 	<%= comment.commenter %>
 </p>
 <p>
-	<%= comment.created_at %>
+	<%= comment.created_at.strftime('%A %-b %-d, %Y | %l.%M %p') %>
 </p>
 <p>
 	<strong>Comment</strong>
@@ -13,7 +13,7 @@
 </p>
 <p>
 	<%= link_to 'Delete Comment', [comment.article, comment],
-		class: 'btn bnt-lg btn-danger', 
+		class: 'btn bnt-lg btn-danger',
 		method: :Delete,
 		data: {confirm: 'Are you certain you wish to delet that comment??'} %>
 </p>

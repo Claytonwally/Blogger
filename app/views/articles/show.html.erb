@@ -1,14 +1,17 @@
 <div class="row">
 	<div class="col"></div>
 	<div class="col-md-7">
-	<p><strong>Title:</strong>
-	<%= @article.title %>
+
+		<%= image_tag 'bw2.jpg', style: 'width:100%' %>
+	<p><h2>TITLE:</h2>
+	<strong><%= @article.title %></strong>
 </p>
 <p>
-	<%= @article.created_at %>
+	<%= @article.created_at.strftime('%A %-b %-d, %Y | %l.%M %p') %>
 </p>
 
-<p><strong>Text:</strong>
+<h3>ARTICLE:</h3>
+<p>
 	<%= @article.text %>
 </p>
 <hr>
@@ -17,12 +20,6 @@
 <hr>
 	<%= render 'comments/form' %>
 
-
-
-<p>
-	<%= link_to 'Back', articles_path, class: 'btn btn-sm btn-info' %>
-   <%= link_to 'Home', welcome_index_path , class:'btn btn-sm btn-success'%>
-</p>
 </div><!-- closing col-md-7 div -->
 <div class="col"></div>
 </div><!-- closing  row div -->

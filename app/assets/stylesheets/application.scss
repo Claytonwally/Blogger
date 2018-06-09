@@ -20,6 +20,7 @@
   {
   min-height: 75rem;
   padding-top: 4.5rem;
+  background-color: #DCDCDC;
 }
 
  .container
@@ -28,7 +29,8 @@
 
  th
  {
-   background-color: #dddddd;
+   background-color: #078CE7;
+   color:#ffffff;
  }
 
  .form-control
@@ -40,4 +42,9 @@
  .btn-light
  {
    border: 3px solid #078CE7;
+ }
+
+ .jumbotron
+ {
+   background-color: #ffffff;   
  }
