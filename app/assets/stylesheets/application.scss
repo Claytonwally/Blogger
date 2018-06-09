@@ -15,12 +15,39 @@
  @import "bootstrap";
  @import "welcome";
  @import "navigation";
+ @import "footer";
 
  body
   {
-  min-height: 75rem;
+  min-height: 50rem;
   padding-top: 4.5rem;
   background-color: #DCDCDC;
+  overflow-x:hidden;
+}
+
+.white
+{
+  color:#ffffff
+}
+
+.grey
+{
+  color: #ddcccc;
+}
+
+.small-font
+{
+  font-size:12px
+}
+
+.linktxt
+{
+  color:#deddee;
+}
+
+.linktxt:hover
+{
+  color:#ffffff;
 }
 
  .container
@@ -46,5 +73,5 @@
 
  .jumbotron
  {
-   background-color: #ffffff;   
+   background-color: #ffffff;
  }
