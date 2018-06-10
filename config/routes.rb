@@ -3,6 +3,9 @@ Rails.application.routes.draw do
 
   resources :articles do
   resources :comments
+  collection do
+    get :search  #creates a path for our nav bar search parameters
+  end
   end
 
   root 'welcome#index'
