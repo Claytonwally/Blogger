@@ -3,20 +3,8 @@
 	<div class = "col-md-7">
 
 <h1>Edit an Article!</h1>
-<%= form_for @article do |f| %>
-	<p>
-		<%= f.label :title %><br>
-		<%= f.text_field :title, class:'form-control' %>
-	</p>
-	<p>
-		<%= f.label :text %>
-		<%= f.text_area :text, class:'form-control' %>
-	</p>
-	<p>
-	   <%= f.submit  class: 'btn bnt-lg btn-primary'%>
-	</p>
 
-<% end %>
+<%= render 'form' %>
 
 </div><!--close div of col-md-7 -->
 <div class="col"></div>
